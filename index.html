@@ -900,59 +900,6 @@ footer a:hover{color:var(--cream);text-decoration:underline}
 @media (max-width: 820px) { .media-grid { grid-template-columns: 1fr 1fr; } .slot.big { grid-column: 1 / -1; } }
 @media (max-width: 520px) { .media-grid { grid-template-columns: 1fr; } }
 .palette-row .swatches .sw:last-child { grid-column: 1 / -1; }
-
-/* --- MÉTRICA DE LANZAMIENTO --- */
-.m-sub{font-size:1.5rem;margin:64px 0 20px;color:var(--ink)}
-.mphases{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.mph{--c:var(--red);background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--c);border-radius:10px;padding:22px 22px 20px}
-.mph.p2{--c:var(--gold)}
-.mph.p3{--c:#4B5260}
-.mph h4{font-family:"Bitter",serif;font-size:1.25rem;margin-bottom:2px;color:var(--ink)}
-.mph .when{font-weight:600;color:var(--c);margin-bottom:10px;font-variant-numeric:tabular-nums}
-.mph .desc{color:var(--muted);font-size:.95rem;line-height:1.6;margin-bottom:14px}
-.mph ul{list-style:none;border-top:1px solid var(--line)}
-.mph li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:.93rem;color:var(--muted)}
-.mph li b{color:var(--ink);font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
-.m-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px}
-.m-head .m-sub{margin-bottom:12px}
-.seg{display:inline-flex;border:1px solid var(--line);border-radius:30px;background:var(--surface);padding:3px;margin-bottom:12px}
-.seg button{border:0;background:transparent;font:600 .85rem "Work Sans",sans-serif;color:var(--muted);padding:8px 16px;border-radius:26px;cursor:pointer}
-.seg button[aria-pressed="true"]{background:var(--night);color:var(--cream)}
-.seg button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
-.m-legend{display:flex;flex-wrap:wrap;gap:8px 22px;margin-bottom:18px;font-size:.88rem;color:var(--muted)}
-.m-legend i{display:inline-block;width:14px;height:14px;border-radius:3px;margin-right:7px;vertical-align:-2px;border:1px solid rgba(0,0,0,.08)}
-.m-legend .b1,.band.b1{background:rgba(217,4,22,.12);fill:rgba(217,4,22,.12)}
-.m-legend .b2,.band.b2{background:rgba(194,149,69,.2);fill:rgba(194,149,69,.2)}
-.m-legend .b3,.band.b3{background:rgba(10,10,12,.06);fill:rgba(10,10,12,.06)}
-.charts{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.chart-card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 16px 10px;box-shadow:0 8px 24px rgba(0,0,0,.03)}
-.chart-card figcaption{font-family:"Bitter",serif;font-weight:800;font-size:1.1rem;margin:0 0 6px 6px;color:var(--ink)}
-.chart{position:relative}
-.chart svg{display:block;width:100%;height:auto;touch-action:pan-y}
-.chart text{font:12.5px "Work Sans",sans-serif;fill:var(--muted)}
-.chart .ytitle,.chart .xtitle{font-size:12.5px;fill:var(--ink);font-weight:500}
-.chart .gl{stroke:#E6E3DC;stroke-width:1}
-.chart .zero{stroke:#9aa0ab;stroke-width:1.2}
-.chart .mk{stroke:#4B5260;stroke-width:1;stroke-dasharray:4 4}
-.chart .mkt{fill:var(--ink);font-size:11.5px;font-weight:600}
-.chart .ln{fill:none;stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round}
-.chart .ref{stroke:#4B5260;stroke-width:1.2;stroke-dasharray:6 4}
-.chart .hv{pointer-events:none}
-.ctip{position:absolute;top:8px;pointer-events:none;background:var(--night);color:var(--cream);font-size:.82rem;line-height:1.5;padding:7px 11px;border-radius:6px;white-space:nowrap;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:2}
-.ctip b{font-variant-numeric:tabular-nums}
-.m-model{margin-top:44px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:6px 22px}
-.m-model summary{cursor:pointer;font-family:"Bitter",serif;font-weight:800;font-size:1.1rem;padding:14px 0;color:var(--ink)}
-.m-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:6px 0 22px}
-.m-cols h4{font-family:"Bitter",serif;font-size:1.02rem;margin-bottom:10px;color:var(--ink)}
-.mt{width:100%;border-collapse:collapse;font-size:.92rem}
-.mt th,.mt td{padding:8px 0;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
-.mt th{font-weight:500;color:var(--muted);padding-right:10px}
-.mt td{font-weight:600;color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
-.note{margin-top:10px;font-size:.86rem;color:var(--muted);line-height:1.55}
-.formula{font-family:"Bitter",Georgia,serif;font-size:.98rem;background:var(--bg);border-left:3px solid var(--gold);border-radius:4px;padding:10px 12px;margin-bottom:10px;line-height:1.6;color:var(--ink)}
-@media(max-width:980px){.mphases{grid-template-columns:1fr}.m-cols{grid-template-columns:1fr}}
-@media(max-width:820px){.charts{grid-template-columns:1fr}}
-
 </style>
 </head>
 <body>
@@ -984,7 +931,6 @@ footer a:hover{color:var(--cream);text-decoration:underline}
 
   <!-- Barra Índice de Navegación -->
   <nav class="hero-bottom-nav" aria-label="Secciones">
-    <a href="#metricas">MÉTRICAS</a>
     <a href="#fases">FASES</a>
     <a href="#cuenta">CUENTA REGRESIVA</a>
     <a href="#identidad">IDENTIDAD</a>
@@ -1095,7 +1041,7 @@ footer a:hover{color:var(--cream);text-decoration:underline}
       </div>
 
       <div class="meta">
-        <div><b>FECHA:</b> <i>28 de noviembre · 12:00 p. m.</i></div>
+        <div><b>FECHA:</b> <i>2 de diciembre · 7:00 a. m.</i></div>
         <div><b>UBICACIÓN:</b> <i>Sinaloa, México</i></div>
         <div><b>PROYECTO:</b> <i>Cohete Experimental Long Xiang</i></div>
       </div>
@@ -1104,130 +1050,6 @@ footer a:hover{color:var(--cream);text-decoration:underline}
     <div class="gate" title="Portal Místico Long Xiang">
       <div class="seal" style="width:110px;height:110px;font-size:2.6rem;">龍香</div>
     </div>
-  </div>
-</section>
-
-<div class="sep"><i></i><i></i><i></i></div>
-
-<!-- Métrica de Lanzamiento (predicciones físicas) -->
-<section id="metricas">
-  <div class="zh-bg">数据</div>
-  <div class="wrap">
-    <h2>Métrica de Lanzamiento</h2>
-    <p class="intro">Predicciones calculadas con la física del cohete y los datos del motor A10-3T. Los valores marcados como supuestos se afinarán con las mediciones reales de las pruebas.</p>
-
-    <div class="stats">
-      <div class="stat">
-        <div class="n"><span data-k="apogee">–</span> <span class="u">m</span></div>
-        <p>Apogeo máximo estimado</p>
-      </div>
-      <div class="stat">
-        <div class="n"><span data-k="vmax">–</span> <span class="u">m/s</span></div>
-        <p>Velocidad máxima (≈ <span data-k="vmaxKmh">–</span> km/h) al apagarse el motor</p>
-      </div>
-      <div class="stat">
-        <div class="n"><span data-k="vterm">–</span> <span class="u">m/s</span></div>
-        <p>Velocidad terminal con paracaídas (valor supuesto)</p>
-      </div>
-      <div class="stat">
-        <div class="n"><span data-k="tTotal">–</span> <span class="u">s</span></div>
-        <p>Tiempo total de vuelo</p>
-      </div>
-    </div>
-
-    <h3 class="m-sub">Las tres fases del vuelo</h3>
-    <div class="mphases">
-      <article class="mph p1">
-        <h4>Fase 1 · Propulsión</h4>
-        <p class="when">0 – <span data-k="tBurn">–</span> s</p>
-        <p class="desc">El motor entrega casi todo su impulso en los primeros 0.3 s y lanza el cohete.</p>
-        <ul>
-          <li><span>Empuje máximo</span><b><span data-k="peakT">–</span> N</b></li>
-          <li><span>Aceleración máxima</span><b>≈ <span data-k="aMaxG">–</span> g</b></li>
-          <li><span>Velocidad al apagado</span><b><span data-k="vBurn">–</span> m/s</b></li>
-          <li><span>Altura al apagado</span><b><span data-k="hBurn">–</span> m</b></li>
-        </ul>
-      </article>
-      <article class="mph p2">
-        <h4>Fase 2 · Reconocimiento</h4>
-        <p class="when"><span data-k="tBurn">–</span> – <span data-k="tDep">–</span> s</p>
-        <p class="desc">El cohete sube por inercia y emite una segunda carga de humo para ubicarlo; después alcanza el apogeo y cae libremente un instante.</p>
-        <ul>
-          <li><span>2.ª carga (humo)</span><b><span data-k="tSmoke">–</span> s · <span data-k="hSmoke">–</span> m</b></li>
-          <li><span>Apogeo</span><b><span data-k="apogee1">–</span> m · <span data-k="tApo">–</span> s</b></li>
-          <li><span>Caída libre</span><b><span data-k="freeFall">–</span> s</b></li>
-        </ul>
-      </article>
-      <article class="mph p3">
-        <h4>Fase 3 · Aterrizaje</h4>
-        <p class="when"><span data-k="tDep">–</span> – <span data-k="tTotal">–</span> s</p>
-        <p class="desc">La tercera carga libera la ojiva con el paracaídas, que frena al cohete hasta su velocidad terminal.</p>
-        <ul>
-          <li><span>Velocidad al abrir</span><b><span data-k="vDep">–</span> m/s</b></li>
-          <li><span>Velocidad terminal</span><b><span data-k="vterm">–</span> m/s</b></li>
-          <li><span>Tiempo de descenso</span><b><span data-k="tDesc">–</span> s</b></li>
-        </ul>
-      </article>
-    </div>
-
-    <div class="m-head">
-      <h3 class="m-sub">Gráficas del vuelo</h3>
-      <div class="seg" role="group" aria-label="Rango de tiempo de las gráficas de posición y velocidad">
-        <button type="button" data-range="full" aria-pressed="true">Vuelo completo</button>
-        <button type="button" data-range="asc" aria-pressed="false">Ascenso y despliegue</button>
-        <button type="button" data-range="desc" aria-pressed="false">Descenso</button>
-      </div>
-    </div>
-    <div class="m-legend" aria-hidden="true">
-      <span><i class="b1"></i>Propulsión</span><span><i class="b2"></i>Reconocimiento</span><span><i class="b3"></i>Aterrizaje</span>
-    </div>
-
-    <div class="charts">
-      <figure class="chart-card"><figcaption>Posición del cohete (altura)</figcaption><div class="chart" id="ch-pos"></div></figure>
-      <figure class="chart-card"><figcaption>Velocidad vertical</figcaption><div class="chart" id="ch-vel"></div></figure>
-      <figure class="chart-card"><figcaption>Empuje del motor</figcaption><div class="chart" id="ch-thr"></div></figure>
-      <figure class="chart-card"><figcaption>Potencia del motor</figcaption><div class="chart" id="ch-pow"></div></figure>
-    </div>
-
-    <details class="m-model">
-      <summary>Datos del motor, supuestos y ecuaciones</summary>
-      <div class="m-cols">
-        <div>
-          <h4>Motor A10-3T (hoja técnica)</h4>
-          <table class="mt">
-            <tr><th>Impulso total</th><td>2.50 N·s</td></tr>
-            <tr><th>Empuje máximo</th><td>13.00 N</td></tr>
-            <tr><th>Duración del empuje</th><td>0.80 s</td></tr>
-            <tr><th>Retardo</th><td>3 s</td></tr>
-            <tr><th>Peso del motor</th><td>8.2 g</td></tr>
-            <tr><th>Peso del propelente</th><td>3.5 g</td></tr>
-          </table>
-          <p class="note">La curva de empuje se reconstruyó a partir de la gráfica de la hoja técnica: pico de 13 N a los 0.17 s y una meseta que se ajusta para que el impulso total sea de 2.50 N·s.</p>
-        </div>
-        <div>
-          <h4>Supuestos del modelo</h4>
-          <table class="mt">
-            <tr><th>Masa del cohete sin motor</th><td><span data-k="mDry">–</span> g</td></tr>
-            <tr><th>Masa al despegue (con motor)</th><td><span data-k="mLift">–</span> g</td></tr>
-            <tr><th>Masa tras el apagado</th><td><span data-k="mBurn">–</span> g</td></tr>
-            <tr><th>Diámetro del cuerpo</th><td><span data-k="dBody">–</span> mm</td></tr>
-            <tr><th>Coef. de arrastre del cuerpo</th><td><span data-k="cdBody">–</span></td></tr>
-            <tr><th>Paracaídas (supuesto)</th><td>Ø <span data-k="dChute">–</span> cm · C<sub>d</sub> <span data-k="cdChute">–</span></td></tr>
-            <tr><th>Densidad del aire / gravedad</th><td><span data-k="rho">–</span> kg/m³ · <span data-k="gAcc">–</span> m/s²</td></tr>
-            <tr><th>Condiciones</th><td>Vertical, sin viento</td></tr>
-          </table>
-          <p class="note">La masa de 6 g se tomó <b>sin el motor</b>, porque el motor por sí solo pesa 8.2 g.</p>
-        </div>
-        <div>
-          <h4>Ecuaciones</h4>
-          <div class="formula">m(t)·dv/dt = T(t) − m(t)·g − ½·ρ·C<sub>d</sub>·A·v·|v|</div>
-          <div class="formula">h(t) = ∫ v dt &nbsp;·&nbsp; ṁ = −(m<sub>p</sub>/I)·T(t)</div>
-          <div class="formula">v<sub>e</sub> = I / m<sub>p</sub> = <span data-k="ve">–</span> m/s<br>P<sub>chorro</sub> = ½·T·v<sub>e</sub> &nbsp;·&nbsp; P<sub>útil</sub> = T·v</div>
-          <div class="formula">v<sub>t</sub> = √( 2·m·g / (ρ·C<sub>d</sub>·A) )</div>
-          <p class="note">Sin paracaídas, el cohete caería a unos <span data-k="vBall">–</span> m/s.</p>
-        </div>
-      </div>
-    </details>
   </div>
 </section>
 
@@ -1271,7 +1093,7 @@ footer a:hover{color:var(--cream);text-decoration:underline}
         <div class="ph-body">
           <h3>Lanzamiento</h3>
           <p>Despegue oficial del cohete y registro de los resultados.</p>
-          <span class="ph-tag">28 de noviembre · 12:00 p. m.</span>
+          <span class="ph-tag">2 de diciembre · 7:00 a. m.</span>
         </div>
       </li>
     </ol>
@@ -1492,7 +1314,7 @@ footer a:hover{color:var(--cream);text-decoration:underline}
 
 <script>
 // ===== Fecha final (Culiacán, UTC-07:00) =====
-const LAUNCH = new Date("2026-11-28T12:00:00-07:00");
+const LAUNCH = new Date("2026-12-02T07:00:00-07:00");
 
 // ===== Cohete lateral: aparece al salir de la pantalla inicial y sube al bajar =====
 (function () {
@@ -1721,185 +1543,12 @@ function copyColor(hex, element) {
   if (fases) new IntersectionObserver(es => fases.classList.toggle('is-off', !es[0].isIntersecting)).observe(fases);
 })();
 
-// ===== Métrica de lanzamiento: simulación de vuelo y gráficas =====
-(function () {
-  if (!document.getElementById('metricas')) return;
-
-  /* ---------- Datos del motor A10-3T (hoja técnica) ---------- */
-  const ENGINE = { impulse: 2.50, burn: 0.80, peak: 13.0, delay: 3.0, mass: 0.0082, prop: 0.0035 };
-  /* ---------- Supuestos (cámbialos y todo se recalcula) ---------- */
-  const ROCKET = { dry: 0.006, diameter: 0.018, cd: 0.60 };              // masa SIN motor (kg), diámetro (m), coef. de arrastre
-  const CHUTE = { diameter: 0.12, cd: 1.2, open: 0.4, freeFall: 1.0 };   // paracaídas supuesto
-  const AIR = { rho: 1.2, g: 9.81 };
-
-  /* ---------- Curva de empuje reconstruida de la gráfica de la hoja técnica ---------- */
-  const CT = [0, 0.04, 0.10, 0.17, 0.22, 0.26, 0.79, 0.80];
-  const curve = p => [0, 1.5, 7, ENGINE.peak, 4, p, p, 0];
-  function area(p) { const y = curve(p); let s = 0; for (let i = 1; i < CT.length; i++) s += (y[i] + y[i - 1]) / 2 * (CT[i] - CT[i - 1]); return s; }
-  let lo = 0.1, hi = 4;
-  for (let i = 0; i < 60; i++) { const mid = (lo + hi) / 2; if (area(mid) < ENGINE.impulse) lo = mid; else hi = mid; }
-  const CY = curve((lo + hi) / 2);
-  function thrust(t) {
-    if (t <= 0 || t >= ENGINE.burn) return 0;
-    let i = 1; while (CT[i] < t) i++;
-    return CY[i - 1] + (t - CT[i - 1]) / (CT[i] - CT[i - 1]) * (CY[i] - CY[i - 1]);
-  }
-
-  /* ---------- Simulación (integración numérica, paso de 0.5 ms) ---------- */
-  function simulate() {
-    const dt = 0.0005, every = 5;
-    const A = Math.PI * Math.pow(ROCKET.diameter / 2, 2), Ac = Math.PI * Math.pow(CHUTE.diameter / 2, 2);
-    const flow = ENGINE.prop / ENGINE.impulse;
-    let t = 0, h = 0, v = 0, m = ROCKET.dry + ENGINE.mass, lifted = false, n = 0;
-    let tApo = null, hApo = 0, tDep = null, vDep = 0;
-    const S = { t: [], h: [], v: [], a: [], T: [], m: [] };
-    const push = (a, T) => { S.t.push(t); S.h.push(h); S.v.push(v); S.a.push(a); S.T.push(T); S.m.push(m); };
-    while (t < 600) {
-      const T = thrust(t);
-      if (t < ENGINE.burn) m -= flow * T * dt;
-      if (tApo === null && lifted && t > ENGINE.burn && v < 0) { tApo = t; hApo = h; }
-      if (tDep === null && tApo !== null && t >= tApo + CHUTE.freeFall) { tDep = t; vDep = v; }
-      let cda = ROCKET.cd * A;
-      if (tDep !== null) { const k = Math.min(1, (t - tDep) / CHUTE.open); cda = (1 - k) * cda + k * CHUTE.cd * Ac; }
-      const drag = 0.5 * AIR.rho * cda * v * Math.abs(v);
-      let a;
-      if (!lifted && T <= m * AIR.g) a = 0; else { lifted = true; a = (T - drag) / m - AIR.g; }
-      v += a * dt; h += v * dt; t += dt; n++;
-      if (n % every === 0) push(a, T);
-      if (lifted && h <= 0 && t > 0.1) { push(a, T); break; }
-    }
-    return { S, tApo, hApo, tDep, vDep, A, Ac };
-  }
-  const R = simulate(), S = R.S;
-  const tEnd = S.t[S.t.length - 1], mBurn = ROCKET.dry + ENGINE.mass - ENGINE.prop;
-  const tSmoke = ENGINE.burn + ENGINE.delay;
-  const at = (arr, t) => { let i = 0; while (i < S.t.length - 1 && S.t[i] < t) i++; return arr[i]; };
-  let vmax = -1e9, tVmax = 0, aMax = 0;
-  S.v.forEach((x, i) => { if (x > vmax) { vmax = x; tVmax = S.t[i]; } if (S.a[i] > aMax) aMax = S.a[i]; });
-  const vTerm = Math.sqrt(2 * mBurn * AIR.g / (AIR.rho * CHUTE.cd * R.Ac));
-  const vBall = Math.sqrt(2 * mBurn * AIR.g / (AIR.rho * ROCKET.cd * R.A));
-  const ve = ENGINE.impulse / ENGINE.prop;
-
-  // Potencia del motor
-  const PJ = S.T.map(T => 0.5 * T * ve), PU = S.T.map((T, i) => T * S.v[i]);
-
-  /* ---------- Valores en la página ---------- */
-  const f = (x, d) => x.toLocaleString('es-MX', { minimumFractionDigits: d || 0, maximumFractionDigits: d || 0 });
-  const VAL = {
-    apogee: f(R.hApo), apogee1: f(R.hApo, 1), tApo: f(R.tApo, 2), vmax: f(vmax), vmaxKmh: f(vmax * 3.6), vterm: f(vTerm, 1),
-    tTotal: f(tEnd), tBurn: f(ENGINE.burn, 2), peakT: f(ENGINE.peak, 1), aMaxG: f(aMax / AIR.g), vBurn: f(vmax),
-    hBurn: f(at(S.h, tVmax)), tSmoke: f(tSmoke, 2), hSmoke: f(at(S.h, tSmoke)), tDep: f(R.tDep, 2), vDep: f(R.vDep, 1).replace('-', '−'),
-    tDesc: f(tEnd - R.tDep), freeFall: f(CHUTE.freeFall, 1), mDry: f(ROCKET.dry * 1000, 1), mLift: f((ROCKET.dry + ENGINE.mass) * 1000, 1),
-    mBurn: f(mBurn * 1000, 1), dBody: f(ROCKET.diameter * 1000), cdBody: f(ROCKET.cd, 2), dChute: f(CHUTE.diameter * 100), cdChute: f(CHUTE.cd, 1),
-    rho: f(AIR.rho, 1), gAcc: f(AIR.g, 2), ve: f(ve), vBall: f(vBall)
-  };
-  document.querySelectorAll('[data-k]').forEach(el => { if (VAL[el.dataset.k] !== undefined) el.textContent = VAL[el.dataset.k]; });
-
-  /* ---------- Gráficas SVG ---------- */
-  const W = 560, H = 300, ML = 66, MR = 14, MB = 44;
-  const fx = (v, d) => v.toLocaleString('es-MX', { maximumFractionDigits: d });
-  function ticks(a, b, n) {
-    const raw = (b - a) / n, mag = Math.pow(10, Math.floor(Math.log10(raw))), q = raw / mag;
-    const step = (q < 1.5 ? 1 : q < 3 ? 2 : q < 7 ? 5 : 10) * mag, out = [];
-    for (let v = Math.ceil(a / step - 1e-9) * step; v <= b + 1e-9; v += step) out.push(+v.toFixed(10));
-    return { out, step };
-  }
-  function lower(arr, x) { let l = 0, r = arr.length - 1; while (l < r) { const m = (l + r) >> 1; if (arr[m] < x) l = m + 1; else r = m; } return l; }
-
-  function draw(host, o) {
-    const MT = o.markers && o.markers.length ? 50 : 20, iw = W - ML - MR, ih = H - MT - MB;
-    const [x0, x1] = o.domain;
-    let ymin = 0, ymax = 0;
-    o.series.forEach(s => { const i0 = lower(s.x, x0), i1 = lower(s.x, x1); for (let i = i0; i <= i1; i++) { if (s.y[i] > ymax) ymax = s.y[i]; if (s.y[i] < ymin) ymin = s.y[i]; } });
-    const span0 = (ymax - ymin) || 1; ymax += span0 * .08; if (ymin < 0) ymin -= span0 * .06;
-    const sx = x => ML + (x - x0) / (x1 - x0) * iw, sy = y => MT + ih - (y - ymin) / (ymax - ymin) * ih;
-    const yt = ticks(ymin, ymax, 5), xt = ticks(x0, x1, 6);
-    const yd = yt.step < 1 ? 1 : 0, xd = xt.step < 1 ? (xt.step < .1 ? 2 : 1) : 0;
-    let g = '';
-    (o.bands || []).forEach(b => { const a = Math.max(b[0], x0), c = Math.min(b[1], x1); if (c > a) g += '<rect class="band ' + b[2] + '" x="' + sx(a).toFixed(1) + '" y="' + MT + '" width="' + (sx(c) - sx(a)).toFixed(1) + '" height="' + ih + '"/>'; });
-    yt.out.forEach(v => { g += '<line class="' + (v === 0 ? 'zero' : 'gl') + '" x1="' + ML + '" x2="' + (W - MR) + '" y1="' + sy(v).toFixed(1) + '" y2="' + sy(v).toFixed(1) + '"/><text x="' + (ML - 8) + '" y="' + (sy(v) + 4).toFixed(1) + '" text-anchor="end">' + fx(v, yd) + '</text>'; });
-    xt.out.forEach(v => { g += '<line class="gl" x1="' + sx(v).toFixed(1) + '" x2="' + sx(v).toFixed(1) + '" y1="' + MT + '" y2="' + (MT + ih) + '"/><text x="' + sx(v).toFixed(1) + '" y="' + (MT + ih + 18) + '" text-anchor="middle">' + fx(v, xd) + '</text>'; });
-    (o.hlines || []).forEach(h => { if (h.y > ymin && h.y < ymax) g += '<line class="ref" x1="' + ML + '" x2="' + (W - MR) + '" y1="' + sy(h.y).toFixed(1) + '" y2="' + sy(h.y).toFixed(1) + '"/><text x="' + (W - MR - 4) + '" y="' + (sy(h.y) - 6).toFixed(1) + '" text-anchor="end">' + h.label + '</text>'; });
-    o.series.forEach(s => {
-      const i0 = lower(s.x, x0), i1 = Math.min(s.x.length - 1, lower(s.x, x1)), st = Math.max(1, Math.floor((i1 - i0) / 500));
-      let d = '';
-      for (let i = i0; i <= i1; i += st) d += (d ? 'L' : 'M') + sx(s.x[i]).toFixed(1) + ' ' + sy(s.y[i]).toFixed(1);
-      g += '<path class="ln" stroke="' + s.color + '" d="' + d + '"/>';
-    });
-    (o.markers || []).forEach((m, k) => {
-      if (m.t < x0 || m.t > x1) return;
-      g += '<line class="mk" x1="' + sx(m.t).toFixed(1) + '" x2="' + sx(m.t).toFixed(1) + '" y1="' + (MT - 8 - (k % 2) * 0) + '" y2="' + (MT + ih) + '"/>' +
-           '<text class="mkt" x="' + (sx(m.t) + 4).toFixed(1) + '" y="' + (MT - 12 - (k % 3) * 13) + '">' + m.label + '</text>';
-    });
-    if (o.peak && o.peak.t >= x0 && o.peak.t <= x1) {
-      const px = sx(o.peak.t), py = sy(o.peak.y), right = px > W * .65;
-      g += '<circle cx="' + px.toFixed(1) + '" cy="' + py.toFixed(1) + '" r="4.5" fill="#D90416" stroke="#fff" stroke-width="1.5"/><text class="mkt" x="' + (right ? px - 8 : px + 8).toFixed(1) + '" y="' + (py - 8).toFixed(1) + '" text-anchor="' + (right ? 'end' : 'start') + '">' + o.peak.label + '</text>';
-    }
-    g += '<text class="ytitle" transform="translate(16 ' + (MT + ih / 2) + ') rotate(-90)" text-anchor="middle">' + o.yTitle + '</text><text class="xtitle" x="' + (ML + iw / 2) + '" y="' + (H - 6) + '" text-anchor="middle">Tiempo (s)</text>';
-    g += '<g class="hv" style="display:none"><line class="mk" y1="' + MT + '" y2="' + (MT + ih) + '"/>' + o.series.map(s => '<circle r="4.5" fill="' + s.color + '" stroke="#fff" stroke-width="1.5"/>').join('') + '</g>';
-    host.innerHTML = '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + o.label + '">' + g + '</svg><div class="ctip" hidden></div>';
-
-    const svg = host.querySelector('svg'), hv = svg.querySelector('.hv'), tip = host.querySelector('.ctip');
-    const vline = hv.querySelector('line'), dots = hv.querySelectorAll('circle');
-    svg.addEventListener('pointermove', e => {
-      const r = svg.getBoundingClientRect(), px = (e.clientX - r.left) / r.width * W;
-      if (px < ML || px > W - MR) { hv.style.display = 'none'; tip.hidden = true; return; }
-      const tx = x0 + (px - ML) / iw * (x1 - x0);
-      let html = '';
-      o.series.forEach((s, k) => {
-        const i = Math.min(s.x.length - 1, lower(s.x, tx));
-        dots[k].setAttribute('cx', sx(s.x[i]).toFixed(1)); dots[k].setAttribute('cy', sy(s.y[i]).toFixed(1));
-        if (k === 0) { vline.setAttribute('x1', sx(s.x[i]).toFixed(1)); vline.setAttribute('x2', sx(s.x[i]).toFixed(1)); html = 't = <b>' + fx(s.x[i], 2) + ' s</b>'; }
-        html += '<br>' + s.name + ': <b>' + fx(s.y[i], s.dec == null ? 1 : s.dec) + ' ' + s.unit + '</b>';
-      });
-      hv.style.display = ''; tip.innerHTML = html; tip.hidden = false;
-      const hr = host.getBoundingClientRect(), left = e.clientX - hr.left;
-      tip.style.left = (left > hr.width * .6 ? left - tip.offsetWidth - 14 : left + 14) + 'px';
-    });
-    svg.addEventListener('pointerleave', () => { hv.style.display = 'none'; tip.hidden = true; });
-  }
-
-  const RED = '#D90416', GOLD = '#C29545', INK = '#0A0A0C';
-  const bands = [[0, ENGINE.burn, 'b1'], [ENGINE.burn, R.tDep, 'b2'], [R.tDep, tEnd, 'b3']];
-  const markers = [{ t: tSmoke, label: 'Humo' }, { t: R.tApo, label: 'Apogeo' }, { t: R.tDep, label: 'Ojiva' }];
-  const ranges = { full: [0, tEnd], asc: [0, R.tDep + 0.8], desc: [R.tDep - 0.5, tEnd] };
-  let range = 'full';
-
-  function drawFlight() {
-    const dom = ranges[range], short = dom[1] - dom[0] <= 12;
-    draw(document.getElementById('ch-pos'), { domain: dom, bands, markers: short ? markers : [], yTitle: 'Altura (m)',
-      label: 'Altura del cohete en función del tiempo. Apogeo de ' + VAL.apogee + ' metros.',
-      series: [{ name: 'Altura', color: RED, x: S.t, y: S.h, unit: 'm' }],
-      peak: { t: R.tApo, y: R.hApo, label: 'Apogeo ' + VAL.apogee + ' m' } });
-    draw(document.getElementById('ch-vel'), { domain: dom, bands, markers: short ? markers : [], yTitle: 'Velocidad (m/s)',
-      label: 'Velocidad vertical del cohete. Máxima de ' + VAL.vmax + ' metros por segundo.',
-      series: [{ name: 'Velocidad', color: INK, x: S.t, y: S.v, unit: 'm/s' }],
-      hlines: [{ y: -vTerm, label: 'Vel. terminal −' + VAL.vterm + ' m/s' }] });
-  }
-  function drawEngine() {
-    const dom = [0, 0.9], bb = [[0, ENGINE.burn, 'b1'], [ENGINE.burn, 0.9, 'b2']];
-    draw(document.getElementById('ch-thr'), { domain: dom, bands: bb, yTitle: 'Empuje (N)',
-      label: 'Curva de empuje del motor, con pico de ' + VAL.peakT + ' newtons.',
-      series: [{ name: 'Empuje', color: RED, x: S.t, y: S.T, unit: 'N' }] });
-    draw(document.getElementById('ch-pow'), { domain: dom, bands: bb, yTitle: 'Potencia (W)',
-      label: 'Potencia del motor: potencia del chorro y potencia útil.',
-      series: [{ name: 'Potencia del chorro', color: GOLD, x: S.t, y: PJ, unit: 'W', dec: 0 },
-               { name: 'Potencia útil (T·v)', color: RED, x: S.t, y: PU, unit: 'W', dec: 0 }] });
-  }
-  drawFlight(); drawEngine();
-  document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => {
-    range = b.dataset.range;
-    document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', x === b ? 'true' : 'false'));
-    drawFlight();
-  }));
-})();
-
 // ===== Biografías del equipo =====
 (function () {
   // Para poner la foto de cada integrante, escribe la ruta o el enlace en "photo" (por ejemplo "fotos/adrian.jpg")
   const TEAM = [
     { name: 'Adrián Ley Calderón', photo: '', bio: [
-      "Adrián Ley Calderón. Egresado de PrepaTec, oriundo de la ciudad de Culiacán. Actualmente, estudiante de Ingeniería en Electrónica."] },
+      "Adrián Ley Calderón. Egresado de PrepaTec, originario de la ciudad de Culiacán. Actualmente, estudiante de Ingeniería en Electrónica."] },
     { name: 'Juan Manuel Pérez Osuna', photo: '', bio: [
       "Juan Manuel Pérez Osuna. Estudiante de primer semestre de Ingeniería en Biotecnología, actualmente cursando en Instituto Tecnológico y de Estudios Superiores de Monterrey campus Sinaloa.",
       "Nacido en Culiacán Sinaloa y con estudios previos de bachillerato en el Instituto Jean Peaget del Río.",
